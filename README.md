@@ -13,4 +13,3 @@ cmake ..
 make 
 make install
 ```
-
