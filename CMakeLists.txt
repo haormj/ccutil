@@ -15,4 +15,6 @@ add_subdirectory(module)
 
 install(FILES ${CMAKE_CURRENT_LIST_DIR}/cmake/HaormjHttpConfig.cmake
         DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/HaormjHttp)
+install(FILES ${CMAKE_CURRENT_LIST_DIR}/cmake/HaormjVisionConfig.cmake
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/HaormjVision)
 
