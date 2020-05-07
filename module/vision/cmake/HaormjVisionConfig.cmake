@@ -3,12 +3,12 @@ include(CMakeFindDependencyMacro)
 
 set(Torch_DIR /usr/local/libtorch/share/cmake/Torch)
 
-find_package(HaormjHttp REQUIRED)
-find_package(OpenCV REQUIRED)
-find_package(Torch REQUIRED)
+find_dependency(HaormjHttp REQUIRED)
+find_dependency(OpenCV REQUIRED)
+find_dependency(Torch REQUIRED)
 
 
-if(NOT TARGET HaormjVision::HaormjVision)
+if(NOT TARGET Haormj::haormj_vision)
     include("${HaormjVision_CMAKE_DIR}/HaormjVisionTargets.cmake")
 endif()
 

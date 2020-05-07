@@ -1,20 +1,6 @@
-#include <string>
+#ifndef HAORMJ_VISION_HPP
+#define HAORMJ_VISION_HPP
 
-#include "torch/script.h"
+#include <haormj/vision/vision.hpp>
 
-using std::string;
-
-namespace haormj {
-namespace vision {
-class Model {
- public:
-  Model();
-  Model(string pretrainedPath);
-  ~Model();
-
- private:
-  torch::jit::script::Module m;
-};
-
-}  // namespace vision
-}  // namespace haormj
+#endif

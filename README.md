@@ -6,10 +6,28 @@ this is c++ toolkit
 
 ```shell
 git clone git@github.com:haormj/ccutil.git
-cd ccutil
+```
+
+#### http library
+
+```shell
+cd ccutil/module/http
 mkdir build
 cd build
 cmake ..
 make 
+make test
+make install
+```
+
+#### vision library
+
+```shell
+cd ccutil/module/vision
+mkdir build
+cd build
+cmake ..
+make 
+make test
 make install
 ```

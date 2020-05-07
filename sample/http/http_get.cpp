@@ -1,25 +1,26 @@
 #include <stdio.h>
+#include <iostream>
 
 #include "haormj/http.hpp"
 
 int main() {
-  char* url =
+  string url =
       "http://picture.ik123.com/uploads/allimg/170322/3-1F322135106.jpg";
-  unsigned char* d;
-  unsigned char** data = &d;
-  long length = 0;
-  length = haormj::http::get(url, data);
-  printf("%ld\n", length);
+  std::cout << url << std::endl;
+
+  std::vector<unsigned char> body = haormj::http::get(url);
+
+  std::cout << body.size() << std::endl;
 
   int i = 0;
-  for (i = 0; i < length; i++) {
+  for (i = 0; i < body.size(); i++) {
     if (i >= 160) {
       break;
     }
     if (i % 16 == 0) {
       printf("\n");
     }
-    printf("%02x", (*data)[i]);
+    printf("%02x", body[i]);
   }
   printf("\n");
 }
