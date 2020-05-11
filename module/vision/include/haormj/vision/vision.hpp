@@ -2,20 +2,24 @@
 #define HAORMJ_VISION_VISION_HPP
 
 #include <string>
+#include <vector>
 
-#include "torch/script.h"
+#include <torch/script.h>
 
 using std::string;
+using std::vector;
 
 namespace haormj {
 namespace vision {
-class Model {
+
+class DogsVsCats {
  public:
-  typedef unsigned char *PreprocessFunc(unsigned char *);
-  Model();
-  Model(string pretrainedPath);
-  void preprocess(PreprocessFunc fn, ...);
-  unsigned char *predict(unsigned char *input);
+  const string DOG = "DOG";
+  const string CAT = "CAT";
+
+  void init(string pretrainedPath);
+  string predict(vector<unsigned char>);
+  string predictByUrl(string url);
 
  private:
   torch::jit::script::Module m;
