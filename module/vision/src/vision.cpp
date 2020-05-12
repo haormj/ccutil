@@ -9,7 +9,7 @@
 
 namespace haormj {
 namespace vision {
-void DogsVsCats::init(string pretrainedPath) {
+void DogsVsCats::load(string pretrainedPath) {
   try {
     m = torch::jit::load(pretrainedPath);
   } catch (const c10::Error &e) {

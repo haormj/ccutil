@@ -17,7 +17,7 @@ class DogsVsCats {
   const string DOG = "DOG";
   const string CAT = "CAT";
 
-  void init(string pretrainedPath);
+  void load(string pretrainedPath);
   string predict(vector<unsigned char>);
   string predictByUrl(string url);
 

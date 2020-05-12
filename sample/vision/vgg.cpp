@@ -4,7 +4,7 @@
 
 int main() {
   haormj::vision::DogsVsCats dc;
-  dc.init(
+  dc.load(
       "/mnt/project/github.com/haormj/vision/Project/DogsVsCats/"
       "dogs-vs-cats_vgg16.ths");
   std::vector<string> urls = {
