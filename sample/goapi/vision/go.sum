@@ -1,0 +1,3 @@
+github.com/haormj/ccutil v0.0.0-20200512231447-7b870360c11e h1:iTT9IvSoCAN0OGXfrA5xj2ncetTt1ePPTIzZFhx9Y1Y=
+github.com/haormj/ccutil/module/goapi/vision v0.0.0-20200518233945-752fc2adf955 h1:oyEW1Zz9JxaE4zhH9sYnNjfEG2rR03jebShiXLXUgso=
+github.com/haormj/ccutil/module/goapi/vision v0.0.0-20200518233945-752fc2adf955/go.mod h1:9Tup88VLL/lf5+B02A3Yo1z9NhAL/sv+8kt3fasqC2s=
